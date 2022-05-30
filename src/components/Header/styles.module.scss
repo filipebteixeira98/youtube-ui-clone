@@ -11,18 +11,6 @@
   align-items: center;
   justify-content: space-between;
   
-  nav a {
-    margin-left: 1rem;
-    
-    &:first-child {
-      color: var(--font-secondary);
-    }
-    
-    &:hover {
-      color: var(--font-secondary);
-    }
-  }
-  
   div {
     display: flex;
     align-items: center;
@@ -36,6 +24,29 @@
       font-size: 1rem;
       font-weight: 500;
       font-family: 'Roboto', sans-serif;
+    }
+  }
+}
+
+.header__nav {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  
+  a:first-child {
+    color: var(--font-secondary);
+  }
+  
+  a:hover {
+    color: var(--font-secondary);
+  }
+
+  div:hover {
+    color: var(--font-secondary);
+    cursor: pointer;
+
+    svg {
+      color: var(--font-secondary);
     }
   }
 }
