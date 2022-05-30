@@ -1,9 +1,15 @@
 import { Header } from './components/Header'
+import { Banner } from './components/Banner'
 
-import './styles/global.scss'
+import styles from './App.module.scss'
 
 function App() {
-  return <Header />
+  return (
+    <main className={styles.content__wrapper}>
+      <Header />
+      <Banner />
+    </main>
+  )
 }
 
 export default App
