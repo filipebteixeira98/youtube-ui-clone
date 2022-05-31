@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 
 export function Recommended() {
   return (
-    <section className={styles.recommended__container}>
+    <section className={styles.wrapper__container}>
       <h1>Recommended music video</h1>
       <div>
         <RecommendedVideo
