@@ -20,8 +20,10 @@ export function RecommendedVideo({
       </div>
       <div className={styles.wrapper__content}>
         <strong>{title}</strong>
-        <span>{artist}</span>
-        <span>{views}</span>
+        <div className={styles.wrapper__item}>
+          <span>{artist}</span>
+          <span>{views}</span>
+        </div>
       </div>
     </div>
   )

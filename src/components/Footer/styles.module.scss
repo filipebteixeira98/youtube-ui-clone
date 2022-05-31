@@ -37,4 +37,36 @@
       background: var(--font-secondary);
     }
   }
+
+  @media screen and (max-width: 720px) {
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+
+    img {
+      display: none;
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    > img {
+      width: 480px;
+      padding-left: 2rem;
+    }
+    
+    div {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 2rem;
+    }
+  }
 }

@@ -1,12 +1,20 @@
 .wrapper__container {
   max-width: 1100px;
   margin: 0 auto;
+
+  @media screen and (min-width: 1280px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 1100px) {
+    padding-left: 2rem;
+  }
 }
 
 .wrapper__content {
   margin-top: 2rem;
   
-  & > span {
+  > span {
     font-size: 1.2rem;
     text-transform: uppercase;
   }
@@ -17,55 +25,58 @@
     color: var(--font-secondary);
     margin-bottom: 2rem;
   }
+}
 
-  div {
-    display: flex;
-    align-items: center;
-    padding-left: 0.5rem;
+.wrapper__item {
+  display: flex;
+  color: var(--font-secondary);
+  margin-left: 1rem;
 
-    & + div {
-      margin-top: 1.25rem;
-    }
+  & + div {
+    margin-top: 1.25rem;
+  }
 
-    img {
-      width: 4rem;
-    }
-    
-    div {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      color: var(--font-secondary);
-      margin-left: 1rem;
+  img {
+    width: 4rem;
+  }
+}
 
-      strong {
-        font-size: 1.25rem;
-      }
+.wrapper__item__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0.5rem;
 
-      span {
-        display: inline-block;
-        margin-top: 0.5rem;
-        font-size: 1.1rem;
-        font-weight: 500;
-        color: var(--font-primary);
+  strong {
+    font-size: 1.25rem;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-        &:last-child {
-          margin-left: 0.5rem;
-          padding-left: 0.5rem;
-          position: relative;
+  span {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--font-primary);
 
-          &::before {
-            content: '';
-            width: 4px;
-            height: 4px;
-            border-radius: 2px;
-            background: var(--font-primary);
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translate(-50%, -50%);
-          }
-        }
+    &:last-child {
+      margin-left: 0.5rem;
+      padding-left: 0.5rem;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        background: var(--font-primary);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
       }
     }
   }
