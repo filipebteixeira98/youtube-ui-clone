@@ -1,13 +1,18 @@
 import styles from './styles.module.scss'
 
-interface Props {
+interface RecommendedVideoProps {
   url: string
   title: string
   artist: string
   views: string
 }
 
-export function RecommendedVideo({ url, title, artist, views }: Props) {
+export function RecommendedVideo({
+  url,
+  title,
+  artist,
+  views,
+}: RecommendedVideoProps) {
   return (
     <div className={styles.wrapper__container}>
       <div className={styles.wrapper__image}>
