@@ -8,8 +8,8 @@ import styles from './styles.module.scss'
 
 export function Header() {
   return (
-    <header className={styles.header__container}>
-      <div className={styles.header__content}>
+    <header className={styles.wrapper__container}>
+      <div className={styles.wrapper__content}>
         <div>
           <a href="#home">
             <img src={logoImg} alt="Youtube Music" />
@@ -17,12 +17,12 @@ export function Header() {
         </div>
         <div>
           <nav>
-            <div className={styles.header__nav}>
+            <div className={styles.wrapper__nav}>
               <a href="#home">Home</a>
               <a href="#explore">Explore</a>
               <a href="#library">Library</a>
               <div>
-                <AiOutlineSearch size={20} />
+                <AiOutlineSearch size={28} />
                 <a href="#search">Search</a>
               </div>
             </div>
